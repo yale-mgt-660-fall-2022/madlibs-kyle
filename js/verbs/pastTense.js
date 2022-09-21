@@ -1,4 +1,4 @@
-verbs = verbs.concat([
+verbsPastTense = verbsPastTense.concat([
     'ran',
     'jumped',
     'coded',

@@ -37,8 +37,8 @@
             // Do a similar replacement for verbs, adjectives, and adverbs
             storyContent = storyContent.replace(/ADJECTIVE/g, () => chooseRandom(adjectives));
             storyContent = storyContent.replace(/ADVERB/g, () => chooseRandom(adverbs));
-            storyContent = storyContent.replace(/VERB/g, () => chooseRandom(verbs));
             storyContent = storyContent.replace(/VERBED/g, () => chooseRandom(verbsPastTense));
+            storyContent = storyContent.replace(/VERB/g, () => chooseRandom(verbs));
 
 
             document.querySelector('#rendered-story').innerHTML = storyContent;
@@ -69,11 +69,11 @@
         NOUN and NOUN VERB togther ADVERB and in peace, for such is their nature.
     </div>
     <div class="story">
-        One day at Yale SOM, NOUN and NOUN VERBed ADVERB. Then they VERBed. The end!
+        One day at Yale SOM, NOUN and NOUN VERBED ADVERB. Then they VERBED. The end!
     </div>
 
     <div class="story">
-        NOUN and NOUN danced together all night long. Can you believe they VERBed ADVERB?   
+        NOUN and NOUN danced together all night long. Can you believe they VERBED ADVERB?   
     </div>
 
     <script>

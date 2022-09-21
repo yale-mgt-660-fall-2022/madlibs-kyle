@@ -14,6 +14,7 @@
         let adjectives = [];
         let adverbs = [];
         let verbs = [];
+        let verbsPastTense = [];
         let smileys = [];
 
         function chooseRandom(anArray) {
@@ -37,7 +38,8 @@
             storyContent = storyContent.replace(/ADJECTIVE/g, () => chooseRandom(adjectives));
             storyContent = storyContent.replace(/ADVERB/g, () => chooseRandom(adverbs));
             storyContent = storyContent.replace(/VERB/g, () => chooseRandom(verbs));
-            
+            storyContent = storyContent.replace(/VERBED/g, () => chooseRandom(verbsPastTense));
+
 
             document.querySelector('#rendered-story').innerHTML = storyContent;
         }
@@ -45,6 +47,7 @@
 
     <!-- Feel free to add your own nouns, verbs, adverbs, and adjectives! -->
     <script src="js/verbs/kyle.js"></script>
+    <script src="js/verbs/pastTense.js"></script>
     <script src="js/adverbs/kyle.js"></script>
     <script src="js/nouns/kyle.js"></script>
     <script src="js/adjectives/kyle.js"></script>

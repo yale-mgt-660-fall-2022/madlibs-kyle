@@ -3,3 +3,15 @@ nouns = nouns.concat([
     'bear',
     'pig'
 ]);
+
+propNouns = propNouns.concat([
+    'Anjani',
+    'Kerwin Charles',
+    'Handsome Dan'
+]);
+
+exclamations = exclamations.concat([
+    'Golly',
+    'Wowza',
+    'Goodness gracious'
+]);
